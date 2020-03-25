@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="1.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company_SP</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds|Ubuntu&display=swap');
+*{
+margin:0;
+padding:0;
+outline: none; 
+}
+body , html {
+width:100%;
+height:100%;
+}
+body{
+background-color: #000;
+font-family: Trebuchet MS , Helvetica ;
+background-image:url(13.jpg);
+
+background-attachment:fixet;
+background-size:cover;
+}
+
+header{
+width:99%;
+padding:10px 0.5% 0px 0.5%;
+background:transparent; 
+float:left;
+}
+
+header #logo {
+color:#963296;
+cursor:pointer;
+text-shadow: 1px 1px 0  black ,1px 2px 2px #960A96 ,2px 2px 2px #96003C ;
+}
+
+header #logo span {
+font-size:1.7em;
+line-height:45px;
+margin-left:40px;
+font-family: 'Trade Winds', cursive;
+}
+
+@media (min-width : 768px){
+#logo{
+float:left;         
+width:30%
+font-size:1.1em;
+}
+
+#about {
+float:right;
+width:67%;
+}
+}
+@media (max-width : 767px){
+#logo{
+margin-top:5px;         
+width:100%;
+font-size:1.5em;
+float:left; 
+}
+
+#about {
+float:left;
+width:100%;
+}
+}
+#about {
+text-align:center;
+font-size:1em;
+line-height: 40px;
+margin-bottom:10px;
+}
+#about > a { 
+color : #96BE14;   
+text-decoration: none;  
+text-shadow: 1px 1px 0  black ,1px 2px 2px #0F3200;     
+}          
+#about > a:hover { 
+color:#96646E;
+text-decoration: none;
+animation-name:ap;
+animation-duration:1s;
+} 
+@keyframes ap{
+from{color:#96BE14;}
+to{color:#96646E;}
+}
+
+@media (min-width : 992px){
+#about > a {
+font-size:1.3em;
+     }	
+#logo{
+font-size:1.5em;
+padding-top:5px;
+}	 
+}
+#about > a:not(:last-child){         
+margin-right:7%;                  
+}
+
+.fixed{
+z-index:5000;                        
+background-color:#fff;               
+border-bottom:1px solid silver;
+
+}
+@media (max-width: 768px){
+.fixed{
+opacity: 0.8;
+}
+#logo :hover{
+animation-name:pas;
+animation-duration:2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+}
+@keyframes pas{
+0%{letter-spacing:0em;}
+50%{letter-spacing:0.3em;}
+100%{letter-spacing:0em;}
+}
+}
+@media (min-width:769px ) and (max-width: 992px){
+.fixed{
+opacity: 0.8;
+position: fixed;
+}
+#logo :hover{
+animation-name:pas;
+animation-duration:2s;
+}
+@keyframes pas{
+0%{letter-spacing:0em;}
+50%{letter-spacing:0.4em;font-size:1em}
+100%{letter-spacing:0em;}
+}
+}
+@media (min-width:993px ) and (max-width: 1200px){
+.fixed{
+opacity: 0.8;
+position: fixed;
+}
+#logo :hover{
+animation-name:pas;
+animation-duration:2s;
+}
+@keyframes pas{
+0%{letter-spacing:0em;}
+50%{letter-spacing:0.4em;font-size:0.8em}
+100%{letter-spacing:0em;}
+}
+}
+@media (min-width:1201px ){
+.fixed{
+opacity: 0.9;
+position: fixed;
+}
+#logo :hover{
+animation-name:pas;
+animation-duration:2s;
+}
+@keyframes pas{
+0%{letter-spacing:0em;}
+50%{letter-spacing:0.5em;font-size:1em;}
+100%{letter-spacing:0em;}
+}
+}
+
+header.fixed #logo{
+color: #32006E;
+}
+
+.fixed #about a{color: #32646E}
+.fixed #about a:hover {color: #96646E}
+
+
+
+#top{
+width:100%;
+
+background-image:url(1.jpg);
+background-blend-mode:multiply; 
+background-color:#2e3a44;
+background-size:cover;      
+text-align:center;
+color:#fff;
+font-size:3em;
+}  
+#top h1{
+padding-top:20%;
+text-transform: uppercase;
+  background: linear-gradient(45deg, #006464 33%, #C8C8C8 66%, #00C8C8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #C89696;        
+}
+
+#top h3{
+text-transform: uppercase;
+  background: linear-gradient(45deg, #006464 33%, #C8C8C8 66%, #00C8C8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #C896C8;    
+}
+#spa{
+animation-name:pas;
+animation-duration:2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+}
+@media (min-width : 1200px){
+#top {
+height:1000px;
+font-size:2.3em;
+width:100%;
+
+     }
+}
+@media (max-width : 1200px) and (min-width:992px){
+#top {
+font-size:2em;
+height:600px;
+width:100%;
+      }}
+@media (max-width : 860px) and (min-width:768px){
+#top {
+font-size:1.8em;
+height:600px;
+padding-top:20%;
+width:100%;
+      }}
+	  @media (max-width : 992px) and (min-width:860px){
+#top {
+font-size:1.7em;
+height:600px;
+padding-top:10%;
+width:100%;
+      }
+}
+@media (max-width : 768px)and (min-width:600px){
+#top {
+font-size:1.5em;
+padding-top:30%;
+height:500px;
+width:100%;
+     }
+}
+@media (max-width : 600px){
+#top {
+width:100%;
+font-size:1.3em;
+padding-top:50%;
+height:500px;
+     }
+}
+
+#main{
+border-radius: 15px;
+margin:1%;
+
+float:left;
+background-image:url(14.jpg);
+background-attachment:fixet;
+background-size:cover;
+background-color:#AAC8C8;
+background-blend-mode:multiply;
+
+border-top:2px dashed black;
+border-bottom:2px dashed black;
+font-size:1.3em;
+}
+
+@media (min-width : 1401px){
+#main {
+margin-left:1%;
+padding:100px 20%;
+width:58%;
+     }
+}
+@media (max-width : 1400px){
+#main {
+padding:100px 10%;
+margin-left:1%;
+width:78%;
+      }
+}
+@media (max-width : 900px){
+#main div{
+width:98%!important;
+margin-bottom:20px;
+     }
+}
+
+
+
+#main div{
+width:48%;
+margin-right:2%;
+float:left;
+}
+#main h2{color:#AA644A;font-size:3em;text-shadow:2px 2px 1px #112222;}
+#main span{color:#AA6422;font-size:1.2em;
+text-shadow:2px 1px 1px black;}
+
+
+#overiew{
+border-radius: 15px;
+margin:1%;
+
+float:left;
+background-image:url(3.jpg);
+
+background-attachment:fixet;
+background-size:cover;
+background-color:#554444;
+background-blend-mode:multiply;
+
+padding:100px 0;
+width:98%;
+text-align:center;
+color:#fff;
+
+}
+#overiew h2{font-size:4em}
+#overiew h4{color:#ccc ; font-size:1.5em}
+
+#overiew .img{
+ float: left;
+ width:30%;
+ text-align:center;
+ margin-right:5%;
+ margin-top:50px;
+}
+ 
+#overview .img:nth-child(odd){
+margin-left:18%;
+}
+
+
+#overiew img{
+background:#fafafa;
+padding:5px;
+border:10px groove #390822;
+width:100%;
+max-width:500px;
+margin-left:50%;
+float:left;
+animation-name:imgg;
+animation-duration:10s;
+animation-iteration-count: infinite;
+}
+@keyframes imgg{
+from{border:10px groove #390822;}
+50%{border:10px groove #39FAFA;}
+to{border:10px groove #390822;}
+}
+
+}
+@media (max-width:700px){
+#overiew .img {
+width:80%;
+margin-left:-30%;
+
+}
+}
+
+@media (min-width:701px)and(max-width:900px){
+#overiew img {
+margin-left:50%;
+}}
+@media (min-width:901px){
+#overiew img {
+margin-left:60%;
+}
+}
+
+#contacts{
+border-radius: 15px;
+margin:1%;
+border-top:2px dashed black;
+border-bottom:2px dashed black;
+
+background-image:url(16.jpg);
+background-blend-mode:multiply; 
+background-color:f4f4f4;
+background-size:cover; 
+
+width:98%;
+float:left;
+padding-bottom:40px;
+padding-top:70px;
+}
+h1,h2,h3,h4,h5{
+font-family:'Helvetica';
+font-weight:lighter;
+
+
+}
+#contacts h5 {font-size:3em;color:#320064;text-shadow: 1px 2px 0  yellow ;   }
+
+#form_input{
+margin-top:15px;
+width:35%;
+margin-left:38%;
+font-size:1.1em;
+}
+#form_input label {
+color:#320064;
+text-shadow: 1px 1px 0  green ;
+cursor:pointer;
+font-size:1.4em;
+font-family:'Helvetica';
+}
+#form_input label span{
+color:#320064;
+
+}
+
+#form_input input ,#form_input textarea{
+margin-bottom:10px;
+width:70%;
+padding:10px 2%;
+border-radius: 7px;
+border:2px solid silver;
+font-size:1.2em;
+color:black;
+}
+
+#form_input input:focus ,#form_input textarea:focus{
+border-color:#320064;
+}
+.btn{
+float:left;
+border-radius:5px;
+padding:5px 9px;
+font-size:1.2em;
+background-color:#ec6550;
+cursor:pointer;
+color:white;
+font-family:'Helvetica';
+
+}
+.btn:hover{
+background-color:#320064;
+}
+
+
+#faq{
+background-image:url(17.jpg);
+background-blend-mode:multiply; 
+border-radius: 15px;
+background-size:cover; 
+
+background-color:#fff;
+border-top:2px dashed #e4e3e3;
+width:98%;
+float:left;
+
+margin:1%;
+padding-top:70px;
+padding-bottom:70px;
+}
+#faq div {
+width:25%;
+margin-left:6%;
+float: left;
+}
+#faq .title{
+font-weight:lighter;
+
+margin-bottom:20px;
+font-size:2.2em;
+color:black;
+text-shadow: 2px 3px 0  yellow ;
+animation-name:titll;
+animation-duration:2s;
+animation-iteration-count: infinite;
+}
+@keyframes titll{
+from{text-shadow: 2px 3px 0  yellow ;}
+50%{text-shadow: 2px 3px 0  blue ;}
+to{text-shadow: 2px 3px 0  yellow ;}
+
+}
+
+#faq .heading{
+text-shadow: 1px 1px 0  black ;
+color:#0E8C64;
+font-size:1.5em;
+font-weight:bold;
+}
+#faq p{
+font-size:Arimo , Helvetica , sans-serif;
+-webkit-font-smoorhing: antialiased;
+font-size:1.2em;
+margin-bottom:40px;
+}
+
+@media (max-width:800px){
+#faq div{
+width:80%;
+float:left;
+margin-left:10%!important;
+}
+}
+@media (min-width:801px){
+#faq div{
+width:25%;
+float:left;
+margin-left:6%;
+}
+}
+.inst{
+margin-top:10%;
+position: fixed;
+opacity:0.8;
+}
+.inst p {
+margin-top:5px;
+}
+.inst p:hover{
+animation-name:inst;
+animation-duration:2s;
+}
+@keyframes inst{
+from{-moz-transform: rotate(0deg); /* Для Firefox */
+    -ms-transform: rotate(0deg); /* Для IE */
+    -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(0deg); /* Для Opera */
+    transform: rotate(0deg);}
+	
+to{-moz-transform: rotate(360deg); /* Для Firefox */
+    -ms-transform: rotate(360deg); /* Для IE */
+    -webkit-transform: rotate(360deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(360deg); /* Для Opera */
+    transform: rotate(360deg);}}
+}
+</style>
+</head>
+<body >
+<div class ="inst">
+<p><a href = "https://www.instagram.com/Opnez_"><img src="Inst1.png" width="40" height="40" alt="Инстаграм"></a></p>
+<p><a title="Viber" href="viber://chat?number=+380634248739"><img src="19.png" width="40" height="40" alt="Вайбер"></a></p>
+<p><a title="Viber" href="viber://add?number=120345678910"><img src="19.png" width="40" height="40" alt="Вайбер"></a></p>
+
+</div>
+<!--не парние пар - even-->
+<header>
+
+
+<div id="logo" onclick="slowScroll('#top')">
+
+<span>Company_SP</span>
+</div>
+<div id="about">
+<a href="#" title="Можливості" onclick="slowScroll('#main')">Можливості</a>
+<a href="#"  onclick="slowScroll('#overiew')" title="Переваги">Переваги</a>
+<a href="#"  onclick="slowScroll('#contacts')" title="Контакти">Контакти</a>
+<a href="#"  onclick="slowScroll('#faq')" title="Відповіді на питання">FAQ</a>
+</div>
+
+</header>
+
+
+
+
+<div id="top">
+<h1>Програмуванн<span id="spa">я</span></h1>
+<h3>як спосіб життя<span id="spa">!</span></h3>
+</div>
+
+<div id="main">
+
+<div class="intro">
+<h2>Наші послуги допоможуть вам !</h2>
+<span>Великий вибір всього , що може вам знадобитись</span>
+</div>
+<div class="text">
+<br>
+<br>
+<span>Замовлення різних видів сайтів : <p>1-Портфоліо</p>
+<p>2-Сайт візитка</p>
+<p>3-Односторінковий сайт</p>
+<p>4-Сайт з використанням JS</p>
+</span>
+</div>
+</div>
+
+
+
+<div id = "overiew">
+<h2>Переваги</h2>
+<h4>ми використовуємо :</h4>
+
+<div class="img">
+
+<img src="9.jpg" alt="" >
+
+</div>
+
+<div class="img">
+<img src="10.jpg" alt="" >
+
+</div>
+
+<div class="img">
+<img src="11.jpg" alt="" >
+
+</div>
+
+<div class="img">
+<img src="12.jpg" alt="">
+</div>
+
+</div>
+
+
+<div id="contacts">
+<center><h5>Зворотній зв'язок</h5></center>
+<form id="form_input">
+<label for="name">Імя <span>*</span></label><br>
+<input type="text" placeholder="Введіть імя" name="name" id ="name"><br>
+<label for="email">Ваша почта <span>*</span></label><br>
+<input type="email" placeholder="Введіть email" name="email" id ="email"><br>
+<label for="message">Повідомлення<span>*</span></label><br>
+<textarea placeholder="Введіть ваше повідомлення" name="message" id="message"></textarea><br>
+<div id="mess_send" class="btn">Відправить</div>
+</form>
+</div>
+
+
+<div id="faq">
+<div>
+<span class="title">Про фірму</span>
+<br>
+<br>
+<span class="heading">Час роботи?</span>
+<p>Працюємо кожен день з 8-20 годин залежно від дня тижня</p>
+<span class="heading">Скільки років цій фірмі?</span>
+<p>Фірма зовсім нова створена на початку 2020 року </p>
+</div>
+
+<div>
+<span class="title">Інформація</span>
+<br>
+<br>
+<span class="heading">Що входить в послуги сервіса?</span>
+<p>Створюємо дизайн сайту , розробляєм його , верстаємо сайт 
+, виставляємо його в мережу</p>
+<span class="heading">Оплата</span>
+<p>Оплата послуг відбувається після отримання готового 
+робочого проекту , виняток якщо проект великий то 
+потрібна предоплата </p>
+
+</div>
+<div>
+<span class="title">Гарантії</span>
+<br>
+<br>
+<span class="heading">Які є гарантії?</span>
+<p>Ми надаємо онлайн гарантію </p>
+<span class="heading">Наші проекти</span>
+<p></p>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Библиотека -->
+
+<script> 
+function slowScroll(id){
+$('html, body').animate({
+scrollTop: $(id).offset().top
+},500);
+}
+
+$(document).on("scroll",function (){
+if ($(window).scrollTop() === 0)
+$("header").removeClass("fixed");
+else
+$("header").attr("class","fixed");
+});
+
+</script>
+<script type="text/javascript">
+var bg_Offset = 0;
+var bg_Object = document.body;
+function scroll_bg(Size) {
+bg_Offset++;
+if (bg_Offset > Size) bg_Offset = 0;
+bg_Object.style.backgroundPosition = "0 " + bg_Offset + "px";
+}
+var Timer = window.setInterval("scroll_bg(150)", 50);
+</script>
+
+
+<script type="text/javascript">
+var caution = false
+
+function set_Cookie(id_cookie, value, validity, way, visit_domain, safe) {
+var cur_Cookie = id_cookie + "=" + escape(value) +
+    ((validity) ? "; validity=" + validity.toGMTString() : "") +
+    ((way) ? "; way=" + way : "") +
+    ((visit_domain) ? "; visit_domain=" + visit_domain : "") +
+    ((safe) ? "; safe" : "")
+if (!caution || (id_cookie + "=" + escape(value)).length <= 4000)
+    document.cookie = cur_Cookie
+else if (confirm("Cookie более 4 KB и будут обрезаны!"))
+    document.cookie = cur_Cookie
+}
+
+function get_Cookie(id_cookie) {
+var particle = id_cookie + "="
+var cookie_StartIndex = document.cookie.indexOf(particle)
+if (cookie_StartIndex == -1) return null
+var cookie_EndIndex = document.cookie.indexOf(";", cookie_StartIndex +
+particle.length)
+if (cookie_EndIndex == -1) cookie_EndIndex = document.cookie.length
+return unescape(document.cookie.substring(cookie_StartIndex +
+particle.length, cookie_EndIndex))
+}
+
+function fix_Date(date) {
+var base_date = new Date(0)
+var skew_date = base_date.getTime()
+if (skew_date > 0) date.setTime(date.getTime() - skew_date)
+}
+
+var now_date = new Date()
+fix_Date(now_date)
+now_date.setTime(now_date.getTime() + 8760 * 3600000)
+var col_visits = get_Cookie("counter")
+if (!col_visits) col_visits = 1
+else col_visits = parseInt(col_visits) + 1
+set_Cookie("counter", col_visits, now_date)
+</script>
+
+
+</body>
+</html>
